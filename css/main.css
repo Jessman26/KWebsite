@@ -70,6 +70,7 @@ header {
 }
 
 
+
 top {
     height: 800px;
     display: flex;
@@ -83,6 +84,35 @@ top {
     font-family: "Lato";
 }
 
+
+
+.div2 {
+    background-color: rgb(210, 191, 169);
+    height:100%;   
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left:80px;
+  
+    
+}
+
+.div2 p {
+    height:100%;
+    width:100%;
+    font-size: 20px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    animation: houdini 2s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+
+
 @media (max-width: 600px) {
     top {
         display:grid;
@@ -93,7 +123,7 @@ top {
     }
 
     top .div1{
-        /*background-image: url('../img/sylt.jpg');*/
+        background-image: url('../img/katharina_bergmann22.png');
         background-size: cover;
         background-position: center;
         height:100%;
@@ -107,12 +137,13 @@ top {
     }
 
     top .div2{
-        display:flex;
+        display:grid;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding-left:30px;
         padding-top:30px;
+        width:100%;
     }
 
     top .div2_2_name{
@@ -123,6 +154,7 @@ top {
     top .div2_2_job{
         font-size:20px;
         animation: houdini2 2s;
+        padding-right:80px;
         width:100%;
         padding-top:6px;
 
@@ -131,23 +163,30 @@ top {
     top p{
         font-size:20px;
         animation: houdini2 2s;
-        width:30%;
+        width:100%;
         padding-top:6px;
         padding-right:10px;
 
     }
 
+    top .div2_3 {
+        height:40%;
+        width:100%;
+        display: grid;
+        justify-content: initial;
+        align-items: top;
+        gap:20px;
+    }
+
     }
 
 
+    
 
-.div2 {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-left:80px;
-}
+
+
+
+
 
 .div2_1 {
     height:20%;
@@ -215,7 +254,7 @@ top {
 
 
 .div1 {
-    background-image: url('syyylt.jpg');
+    background-image: url('../img/sylt22.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -227,26 +266,7 @@ top {
 
 }
 
-.div2 {
-    background-color: rgb(210, 191, 169);
-    height:100%;   
-    width:60%;
-  
-    
-}
 
-.div2 p {
-    height:100%;
-    width:100%;
-    font-size: 20px;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: black;
-    animation: houdini 2s;
-    opacity: 0;
-    animation-fill-mode:forwards;
-}
 
 .MehrErfahren {
     width:350px;
@@ -325,24 +345,34 @@ second div {
 
 }
 
+
+@media (max-width: 600px) {
+    second div {
+        height:400px;
+        display:grid;
+        align-items: center;
+        margin:0px;
+    }
+
+
 second .photo {
-    background-image: url('photo.jpg');
+    background-image: url('../img/katharina_bergmann22.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display:grid;
     align-items: center;
-    width:30%;
+    width:100%;
     margin:0px;
 
 }
 
 second .phototext {
-    width:70%;
+    width:100%;
     margin:0px;
     font-size:30px;
-    font-family: "Lato" ;
-    margin:0px;
-    padding-left: 50px;
+    font-family: "Lato";    
+    display:grid;
 
 }
 
@@ -353,6 +383,9 @@ second .phototext p {
     margin:0px;
     padding-left: 30px;
     padding-bottom:80px;
+    display:grid;
+    background-color: rgb(210, 191, 169);
+
    
 
 }
@@ -362,6 +395,7 @@ second .phototext p {
     width:303px;
     height:400px;
     position:relative;
+    display:none;
     left:12em;
     bottom:74em;
     z-index: -1;
@@ -380,7 +414,7 @@ third div {
     margin-left:200px;
     margin-right:200px;
     margin-top:100px;
-    display:flex;
+    display:grid;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
@@ -411,3 +445,6 @@ third .contact {
     font-family: "Lato";
     margin:0px;
     padding-left: 50px;
+
+}
+}
