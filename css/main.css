@@ -6,7 +6,6 @@ header {
     align-items: center;
     background-color: white;
     padding-left:50px;
-    padding-right:50px;
     font-size: 20px;
     font-family: "Lato" ;
 }
@@ -117,13 +116,16 @@ top {
     top {
         display:grid;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: start;
+        height: 800px;
         padding:0px;
         margin:0px;
     }
 
+
     top .div1{
-        background-image: url('../img/katharina_bergmann22.png');
+        background-image: url('../img/sylt3.jpg');
         background-size: cover;
         background-position: center;
         height:100%;
@@ -131,41 +133,62 @@ top {
         opacity: 0.7;
         filter: alpha(opacity=40);
     }
+    
+
+    top .div2 {
+        background-color: rgb(210, 191, 169);
+        height:100%;   
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top:40px;
+        align-items: center;
+        padding-left:0px;
+        
+    }
 
     top .div2_1{
         display:none;
     }
 
-    top .div2{
-        display:grid;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding-left:30px;
-        padding-top:30px;
-        width:100%;
-    }
+  
 
     top .div2_2_name{
         font-size:30px;
+        padding-left:20px;
         animation: houdini2 2s;
+    }
+
+    top .div2_2 .quotation
+    {
+        margin:0px;
+        padding:0px;
+        padding-left:20px;
+        font-weight: regular;
     }
 
     top .div2_2_job{
-        font-size:20px;
+        font-size:18px;
         animation: houdini2 2s;
-        padding-right:80px;
         width:100%;
         padding-top:6px;
+        padding-left:10px;
 
     }
 
-    top p{
-        font-size:20px;
-        animation: houdini2 2s;
-        width:100%;
-        padding-top:6px;
-        padding-right:10px;
+    top .div2 p{
+        height:100%;
+        width:80%;
+        font-size: 20px;
+        padding-top:0px;
+        display:grid;
+        justify-content: top;
+        align-items: center;
+        color: white;
+        animation: houdini 2s;
+        opacity: 0;
+        animation-fill-mode:forwards;
 
     }
 
@@ -177,6 +200,8 @@ top {
         align-items: top;
         gap:20px;
     }
+
+    
 
     }
 
@@ -224,8 +249,9 @@ top {
 .div2_2_name_2 {
     display: flex;
     align-items: top;
-    gap:20px;
+    gap:10px;
     padding-top:20px;
+    padding-left:20px;
 
 }
 
@@ -237,6 +263,7 @@ top {
     padding-top:20px;
     margin-top:16px;
     width:10%;
+    padding-left:20px;
     animation: houdini2 2s;
 
 }
@@ -254,7 +281,7 @@ top {
 
 
 .div1 {
-    background-image: url('../img/sylt22.jpg');
+    background-image: url('../img/sylt3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -356,7 +383,7 @@ second div {
 
 
 second .photo {
-    background-image: url('../img/katharina_bergmann22.png');
+    background-image: url('../img/katharina_bergmann2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -448,3 +475,87 @@ third .contact {
 
 }
 }
+
+
+
+@media (max-width: 600px) {
+    .menu {
+        background-color: rgb(210, 191, 169);
+        height:100%;
+        width:100%;
+        position: fixed;
+        transition: all 0.35s ease-in-out;
+        transform: translateX(100%);
+        z-index: 10;
+        display:block;
+        opacity:0.9;    
+
+      }
+
+      .menu-open {
+        background-color: rgb(210, 191, 169);
+        transform: translateX(0%);
+        
+      }
+
+      .closingx {
+        height: 100px;
+        display: flex;
+        padding-top: 20px;
+        align-items: center;
+        background-color: rgb(210, 191, 169);
+        font-size: 20px;
+        font-family: "Lato" ;
+        justify-content: space-between;
+        padding:0px;
+        padding-left:30px;
+        margin:0px;
+        gap:75px;
+        opacity:1;
+
+      }
+
+
+        .closingx .name{
+        display:flex;
+        align-items: center;
+        width:90%;
+        padding:0px;
+        margin:0px;
+        }
+        .closingx .burger{
+            display:flex;
+            width:33%;
+            padding:0px;
+            margin:0px;
+            }
+
+      .menu a, .menu a:focus, .menu a:visited {
+        color: white;
+        display: block;
+        font-size: 50px;
+        margin: 25px auto;
+        text-align: center;
+        text-decoration: none;
+        font-family: "Lato" ;
+
+      }
+
+      .namehide {
+        display:none;
+      }
+
+      .burgerhide {
+        display:none;
+      }
+
+      body {
+        display:flex;
+        flex-direction: column;
+      }
+
+    }
+
+    .colormenu2{
+        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    }

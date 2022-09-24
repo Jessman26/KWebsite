@@ -11,3 +11,21 @@ function menuOneShow(){
 
   document.getElementById('menu-1-button').addEventListener('mouseover', menuOneShow);
   document.getElementById('menu-1-button').addEventListener('mouseleave', menusHide);
+
+
+  const menuController = document.getElementById('menu-hamburger');
+
+  menuController.addEventListener('click', function() {
+    document.querySelector('.menu').classList.toggle('menu-open');
+  });
+
+
+  document.getElementById('close').addEventListener('click', function() {
+    console.log('close anonymous function was clicked');
+    document.querySelector('.menu').classList.remove('menu-open');
+  });
+
+
+
+
+
