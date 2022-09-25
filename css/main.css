@@ -193,24 +193,12 @@ top {
     }
 
     top .div2_3 {
-        height:40%;
-        width:100%;
-        display: grid;
-        justify-content: initial;
-        align-items: top;
-        gap:20px;
+        display:none;
     }
 
     
 
     }
-
-
-    
-
-
-
-
 
 
 .div2_1 {
@@ -274,9 +262,6 @@ top {
     animation: houdini2 2s;
 
 }
-
-
-
 
 
 
@@ -354,68 +339,100 @@ top {
 
 
 
-
-second {
-    height:800px;
-    width:100%;
-}
-
-
-second div {
+  main {
     height:400px;
+    width:80%;
     margin-left:250px;
     margin-right:250px;
     margin-top:100px;
     display:flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    gap:5%;
+}
+
+
+main .photo {
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/katharina_bergmann2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: -25px -25px rgb(210, 191, 169);
+
+}
+
+
+
+main .phototext {
+    height:100%;
+    width:70%;
+    margin:0px;
+    font-size:30px;
+    font-family: "Lato";   
+    display:grid;
+    flex-direction: column; 
+    align-items: center;
+    margin:0px;
+    padding:0px;
+    padding-left:20px;
+
+}
+
+main .phototext .headline {
+    height:10%;
+}
+
+main .phototext .explanation {
+    height:90%;
+}
+
+main .phototext p {
+    margin-top:40px;    
 
 }
 
 
 @media (max-width: 600px) {
-    second div {
+    main  {
         height:400px;
-        display:grid;
+        width:100%;
+        display:block;
         align-items: center;
         margin:0px;
+        background-color: red;
+    }
+
+    main .photo {
+        width:100%;
+        height:70%;
+        background-image: url('../img/katharina_bergmann2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;        
+        box-shadow: none;
+
+
+    }
+
+    main .phototext {
+        height:30%;
+        width:100%;
+        margin:0px;
+        font-size:10px;
+        font-family: "Lato";   
+        background-color: yellow;
+
     }
 
 
-second .photo {
-    background-image: url('../img/katharina_bergmann2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display:grid;
-    align-items: center;
-    width:100%;
-    margin:0px;
-
 }
 
-second .phototext {
-    width:100%;
-    margin:0px;
-    font-size:30px;
-    font-family: "Lato";    
-    display:grid;
-
-}
-
-second .phototext p {
-    
-    font-size:30px;
-    font-family: "Lato" ;
-    margin:0px;
-    padding-left: 30px;
-    padding-bottom:80px;
-    display:grid;
-    background-color: rgb(210, 191, 169);
-
-   
-
-}
 
 .photobackground {
     background-color: rgb(210, 191, 169);
@@ -427,6 +444,44 @@ second .phototext p {
     bottom:74em;
     z-index: -1;
 }
+
+
+section {
+    background-color: rgb(159, 175, 174);
+    height:400px;
+    width:100%;
+    margin-top:100px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+section .sectiondiv {
+    width:12%;
+}
+
+section .googlemaps {
+    height:100%;
+    width:25%;
+}
+
+section .contact {
+    height:100%;
+    width:63%;
+}
+
+section .contact .explanation{
+    margin-top:40px;
+    margin-left:50px;   
+
+
+
+}
+
+
+
 
 
 third {
@@ -474,8 +529,12 @@ third .contact {
     padding-left: 50px;
 
 }
-}
 
+
+
+.menu {
+    display:none;
+}
 
 
 @media (max-width: 600px) {
