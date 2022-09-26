@@ -497,7 +497,7 @@ section .contact {
 }
 
 section .contact .explanation{
-    margin-top:40px;
+    margin-top:0px;
     margin-left:50px;   
 
 
@@ -559,6 +559,29 @@ third .contact {
 .menu {
     display:none;
 }
+
+
+form {
+    width: 100px;
+    display:block;
+    align-items: space-between;
+    height: 200px;
+
+}
+
+fieldset {
+    border:0;
+    height: 200px;
+}
+
+fieldset, input {
+    margin:10px;
+    width: 500px;
+    height:30px;
+    margin-left:0px;
+
+}
+
 
 
 @media (max-width: 600px) {
@@ -637,8 +660,87 @@ third .contact {
         flex-direction: column;
       }
 
+
+
+      form {
+        width: 30px;
+        display:block;
+        align-items: space-between;
+        height: 200px;
+
     }
+
+    fieldset {
+        border:0;
+        height: 200px;
+    }
+
+    fieldset, input {
+        margin:10px;
+        width:180px;
+        height:30px;
+        margin-left:0px;
+
+    }
+
+
+    section {
+        background-color: rgb(159, 175, 174);
+        height:600px;
+        width:100%;
+        display:block;
+        flex-direction: column;;
+    
+    }
+
+    section .googlemaps {
+        height:250px;
+        width:80%;
+        display: block;
+        padding-left: 38px;
+    }
+
+    section .contact {
+        height:59%;
+        width:100%;
+    }
+    
+    section .contact .explanation{
+        margin-top:0px;
+        margin-left:38px;  
+        margin-top:35px;
+
+
+    }
+
+
+    form {
+        width: 100px;
+        display:block;
+        align-items: space-between;
+        height: 200px;
+    
+    }
+    
+    fieldset {
+        border:0;
+        height: 200px;
+    }
+    
+    fieldset, input {
+        width: 324px;
+        height:30px;
+    
+    }
+
+
+
+
 
     .colormenu2{
         filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
     }
+
+
+   
+}
